@@ -6,7 +6,7 @@ const config = {
     connectionString: "postgres://candidate:62I8anq3cFq5GYh2u4Lh@rc1b-r21uoagjy1t7k77h.mdb.yandexcloud.net:6432/db1",
     ssl: {
         rejectUnauthorized: true,
-        ca: fs.readFileSync("/Users/liasahakyan/.postgresql/root.crt").toString(),
+        ca: fs.readFileSync("/home/runner/.postgresql/root.crt").toString(),
     },
 };
 
