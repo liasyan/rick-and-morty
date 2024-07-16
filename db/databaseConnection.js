@@ -49,7 +49,6 @@ async function getTable() {
            SELECT id FROM ${tableName}
        `);
    } catch (err) {
-       console.log(err.message, 'ERROR in getTable')
        return null;
    }
 }
