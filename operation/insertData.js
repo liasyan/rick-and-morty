@@ -8,8 +8,8 @@ module.exports = async (insert) => {
         await insert(characters);
 
         console.log("Characters inserted successfully");
-    } catch (error) {
-        console.error("Error fetching and inserting characters:", error);
+    } catch (err) {
+        console.error("Error fetching and inserting characters:", err.message);
     }
 
     return {}

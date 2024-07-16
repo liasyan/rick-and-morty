@@ -37,7 +37,7 @@ async function createTable() {
      return client.query(`
             CREATE TABLE ${tableName} (
                 id SERIAL PRIMARY KEY,
-                name VarCHAR(50) NOT NULL,
+                name VARCHAR(50) NOT NULL,
                 data jsonb
             );
         `);
@@ -49,6 +49,7 @@ async function getTable() {
            SELECT id FROM ${tableName}
        `);
    } catch (err) {
+       console.log(err.message, 'ERROR in getTable')
        return null;
    }
 }
@@ -81,6 +82,7 @@ async function dropTable(){
            DROP TABLE ${tableName};
        `);
     } catch (err) {
+        console.log(err.message, 'ERROR in dropTable')
         return null;
     }
 }
