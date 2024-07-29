@@ -7,6 +7,7 @@ app.use(express.json());
 
 const { insert, get } = require('./db/databaseConnection');
 const router = require('./router/index')({ insert, get });
+// const migration = require('./migrateData');
 
 app.use('/', router);
 
