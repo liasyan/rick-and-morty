@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "nodemon index.js",
+    "prestart": "node setup.js",
     "start": "node index.js"
   },
   "author": "Lia Sahakyan",
